@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import MyPic from '@/component/assets/IMG_1045.JPG'
+import MyPic from '@/app/certificate/img/bayu.jpg'
 import Head from 'next/head';
 
 export default function Home() {
