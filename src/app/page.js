@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>My Page</title>
+        <title>CERTIFICATE</title>
         <meta name="description" content="this is from @gorillaworkout." />
         <meta property="og:image" content={MyPic} />
         <meta property="og:image:width" content="1200" />
