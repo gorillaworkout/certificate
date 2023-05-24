@@ -2,6 +2,8 @@ import Image from 'next/image'
 import MyPic from '@/app/certificate/img/bayu.jpg'
 import Head from 'next/head';
 
+
+
 export default function Home() {
   return (
     <>
