@@ -34,20 +34,6 @@ export default function Page({params}){
     console.log(splitParams,'splitparams')
     return (
         <>
-            <Head>
-                <title>CERTIFICATE {params.img}</title>
-                <meta name="description" content="this is from @gorillaworkout." />
-                {/* <meta property="og:image" content={MyPic} /> */}
-                <meta property="og:image:width" content="1200" />
-                <meta property="og:image:height" content="630" />
-            </Head>
-            {/* <div className="w-screen h-screen flex flex-col justify-center items-center">
-            <h1>CERTIFICATE {params.img}, {decodeURIComponent(params.badge)}</h1> 
-                <h1>CERTIFICATE {params.img}, {decodeURIComponent(params.content)}</h1>
-                <h1>CERTIFICATE {params.img}, {decodeURIComponent(params.description)}</h1>
-                <h1>CERTIFICATE {params.img}, {decodeURIComponent(params.issue)}</h1>
-              
-            </div> */}
             <div className="grid grid-cols-2 lg:py-28 lg:px-28 md:py-20 md:px-20 sm:px-14 sm:py-14 bg-white w-screen h-screen">
                     <div className="bg-white flex justify-center items-center p-5">
                         <img src={decodeURIComponent(params.img)} alt="" className="w-full h-full rounded-md" />
@@ -94,14 +80,3 @@ export default function Page({params}){
         
     )
 }
-
-// export const getServerSideProps =  () => {
-//     // const res = await fetch('https://api.github.com/repos/vercel/next.js');
-//     // const repo = await res.json();
-//     // return { props: { repo } };
-//     return {
-//         props:{
-//             data:'asdasdasd'
-//         }
-//     }
-//   };
