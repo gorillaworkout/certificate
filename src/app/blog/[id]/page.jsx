@@ -6,6 +6,8 @@ import Head from 'next/head';
 
 export async function generateMetadata({ params }) {
     // const product = await getProduct(params.id);
+    console.log(params.id,'params id')
+    console.log(decodeURIComponent(params.id),'params id')
     return { 
         title: params.id ,
         twitter:{
@@ -15,7 +17,7 @@ export async function generateMetadata({ params }) {
             siteId:'12971917292',
             creator:'Gorillaworkoutjs',
             creatorId:'asdasdasdasd',
-            images:encodeURI(params.id)
+            images:decodeURIComponent(params.id)
           },
           openGraph:{
             title:'open graph js',
@@ -23,7 +25,7 @@ export async function generateMetadata({ params }) {
             url:'https://gorillaworkout.space',
             siteName:'next.js',
             images:[{
-              url:encodeURI(params.id),
+              url:decodeURIComponent(params.id),
               width:400,
               height:400
             }]
@@ -68,6 +70,7 @@ export default function Page({params}){
             </Head>
             <div className="w-screen h-screen flex flex-col justify-center items-center"> 
             <h1>CERTIFICATE {params.id}</h1>
+            <h2>{decodeURIComponent(params.id)}</h2>
             {/* <Image
                 src={MyPic}
                 alt="Image description"
