@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
             siteId:'12971917292',
             creator:'Gorillaworkoutjs',
             creatorId:'asdasdasdasd',
-            images:params.id
+            images:encodeURI(params.id)
           },
           openGraph:{
             title:'open graph js',
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
             url:'https://gorillaworkout.space',
             siteName:'next.js',
             images:[{
-              url:params.id,
+              url:encodeURI(params.id),
               width:400,
               height:400
             }]
