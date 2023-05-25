@@ -59,6 +59,9 @@ export async function generateMetadata({ params }) {
 
 // high
 export default function Page({params}){
+
+    let splitParams = params
+    console.log(splitParams,'splitparams')
     return (
         <>
             <Head>
@@ -83,7 +86,7 @@ export default function Page({params}){
                                 BADGE ID
                             </p>
                             <p className="text-black text-[30px] font-semibold leading-10 ">
-                                G0r1llaW0rk0uT
+                                {decodeURIComponent(params.description.split('|')[1])}
                             </p>
                         </div>
                         <div className="flex flex-col mb-5">
@@ -91,7 +94,7 @@ export default function Page({params}){
                                 Content Name
                             </p>
                             <p className="text-[#DA4A4A] text-[30px] font-semibold leading-10 ">
-                                DIGITAL MODERN WORK - OFFICE 365
+                            {decodeURIComponent(params.description.split('|')[2])}
                             </p>
                         </div>
                         <div className="flex flex-col mb-5">
@@ -99,7 +102,7 @@ export default function Page({params}){
                                 Description
                             </p>
                             <p className="text-[#282828] text-[30px] font-semibold leading-10 ">
-                                anda pikir ini description ? tentu saja description
+                            {decodeURIComponent(params.description.split('|')[3])}
                             </p>
                         </div>
                         <div className="flex flex-col mb-5">
@@ -107,7 +110,7 @@ export default function Page({params}){
                                 ISSUE DATE
                             </p>
                             <p className="text-[#282828] text-[30px] font-semibold leading-10 ">
-                                01 January 2023
+                            {decodeURIComponent(params.description.split('|')[3])}
                             </p>
                         </div>
                     </div>  
