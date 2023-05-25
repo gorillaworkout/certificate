@@ -5,9 +5,6 @@ import Head from 'next/head';
 
 
 export async function generateMetadata({ params }) {
-    // const product = await getProduct(params.id);
-    console.log(params.img,'params id')
-    console.log(decodeURIComponent(params.img),'params id')
     return { 
         title: params.img ,
         twitter:{
@@ -44,13 +41,13 @@ export default function Page({params}){
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
             </Head>
-            <div className="w-screen h-screen flex flex-col justify-center items-center">
+            {/* <div className="w-screen h-screen flex flex-col justify-center items-center">
             <h1>CERTIFICATE {params.img}, {decodeURIComponent(params.badge)}</h1> 
                 <h1>CERTIFICATE {params.img}, {decodeURIComponent(params.content)}</h1>
                 <h1>CERTIFICATE {params.img}, {decodeURIComponent(params.description)}</h1>
                 <h1>CERTIFICATE {params.img}, {decodeURIComponent(params.issue)}</h1>
-                {/* <h2>{decodeURIComponent(params.id)}</h2> */}
-            </div>
+              
+            </div> */}
             <div className="grid grid-cols-2 lg:py-28 lg:px-28 md:py-20 md:px-20 sm:px-14 sm:py-14 bg-white w-screen h-screen">
                     <div className="bg-white flex justify-center items-center p-5">
                         <img src={decodeURIComponent(params.img)} alt="" className="w-full h-full rounded-md" />
@@ -77,9 +74,11 @@ export default function Page({params}){
                             <p className="text-[#818181] text-[30px] font-medium leading-10 ">
                                 Description
                             </p>
-                            <p className="text-[#282828] text-[30px] font-semibold leading-10 ">
+                            {/* <p className="text-[#282828] text-[30px] font-semibold leading-10 ">
                             {decodeURIComponent(params.description)}
-                            </p>
+                            </p> */}
+                            <div dangerouslySetInnerHTML={{ __html: decodeURIComponent(params.description )}} />
+
                         </div>
                         <div className="flex flex-col mb-5">
                             <p className="text-[#818181] text-[30px] font-medium leading-10 ">
