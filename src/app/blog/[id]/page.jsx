@@ -72,11 +72,12 @@ export default function Page({params}){
             <h1>CERTIFICATE {params.id}</h1>
             <h2>{decodeURIComponent(params.id)}</h2>
             {/* <Image
-                src={MyPic}
+                src={decodeURIComponent(params.id)}
                 alt="Image description"
                 width={300}
                 height={300}
             /> */}
+            <img src={decodeURIComponent(params.id)} alt="" className="h-[300px] w-[300px]" />
             </div>
         </>
         
