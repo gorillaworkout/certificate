@@ -37,36 +37,42 @@ export default function Page({params}){
                         <h1 className="text-[#DA4A4A] text-[30px] lg:mb-10">Badges Information</h1>
                         <div className="flex flex-col mb-5">
                             <p className="text-[#818181] text-[30px] font-medium leading-10 ">
-                                BADGE ID
+                                Course Name
                             </p>
                             <p className="text-black text-[30px] font-semibold leading-10 ">
-                                {decodeURIComponent(params.badge)}
+                                {decodeURIComponent(params.name)}
                             </p>
                         </div>
                         <div className="flex flex-col mb-5">
                             <p className="text-[#818181] text-[30px] font-medium leading-10 ">
-                                Content Name
+                                Organization
                             </p>
                             <p className="text-[#DA4A4A] text-[30px] font-semibold leading-10 ">
-                            {decodeURIComponent(params.content)}
+                            {decodeURIComponent(params.organization)}
                             </p>
                         </div>
                         <div className="flex flex-col mb-5">
                             <p className="text-[#818181] text-[30px] font-medium leading-10 ">
-                                Description
-                            </p>
-                            {/* <p className="text-[#282828] text-[30px] font-semibold leading-10 ">
-                            {decodeURIComponent(params.description)}
-                            </p> */}
-                            <div className="text-[#282828] text-[30px] font-semibold leading-10 " dangerouslySetInnerHTML={{ __html: decodeURIComponent(params.description )}} />
-
-                        </div>
-                        <div className="flex flex-col mb-5">
-                            <p className="text-[#818181] text-[30px] font-medium leading-10 ">
-                                ISSUE DATE
+                                Issue Date
                             </p>
                             <p className="text-[#282828] text-[30px] font-semibold leading-10 ">
                             {decodeURIComponent(params.issue)}
+                            </p>
+                        </div>
+                        <div className="flex flex-col mb-5">
+                            <p className="text-[#818181] text-[30px] font-medium leading-10 ">
+                                Expired Date
+                            </p>
+                            <p className="text-[#282828] text-[30px] font-semibold leading-10 ">
+                            {decodeURIComponent(params.expired)}
+                            </p>
+                        </div>
+                        <div className="flex flex-col mb-5">
+                            <p className="text-[#818181] text-[30px] font-medium leading-10 ">
+                                Credential
+                            </p>
+                            <p className="text-[#282828] text-[30px] font-semibold leading-10 ">
+                            {decodeURIComponent(params.credential)}
                             </p>
                         </div>
                     </div>  
