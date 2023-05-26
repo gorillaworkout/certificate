@@ -6,14 +6,14 @@ export async function generateMetadata({ params }) {
         twitter:{
             card:'summary_large_image',
             title:decodeURIComponent(params.badge),
-            description:decodeURIComponent(params.description),
+            description:decodeURIComponent(params.badge),
             siteId:'12971917292',
             creator:'Gorillaworkoutjs',
             creatorId:'asdasdasdasd',
             images:decodeURIComponent(params.img)
           },
           openGraph:{
-            title:decodeURIComponent(params.description),
+            title:decodeURIComponent(params.badge),
             url:'https://gorillaworkout.space',
             siteName:'next.js',
             images:[{
@@ -36,7 +36,7 @@ export default async function Page({params}){
                         <h1 className="text-[#DA4A4A] text-[30px] lg:mb-10">Badges Information</h1>
                         <div className="flex flex-col mb-5">
                             <p className="text-[#818181] text-[30px] font-medium leading-10 ">
-                                Course Name { itemData}
+                                Course Name 
                             </p>
                             <p className="text-black text-[30px] font-semibold leading-10 ">
                                 {decodeURIComponent(params.name)}
