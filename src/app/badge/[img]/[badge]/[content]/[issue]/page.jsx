@@ -4,7 +4,7 @@ export async function generateMetadata({ params }) {
         title: params.img ,
         twitter:{
             card:'summary_large_image',
-            title:`\n ${decodeURIComponent(params.content)} \n issue Date: ${decodeURIComponent(params.issue)} \n Badge Id: ${decodeURIComponent(params.badge)}`,
+            title:`\n ${decodeURIComponent(params.content)}, \n Issued Date: ${decodeURIComponent(params.issue)}, \n Badge ID: ${decodeURIComponent(params.badge)}`,
             description:decodeURIComponent(params.content),
             siteId:'02081996',
             creator:'MyDigilearn',
@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
             images:decodeURIComponent(params.img)
           },
           openGraph:{
-            title:`\n ${decodeURIComponent(params.content)} \n issue Date: ${decodeURIComponent(params.issue)} \n Badge Id: ${decodeURIComponent(params.badge)}`,
+            title:`\n ${decodeURIComponent(params.content)}, \n Issued Date: ${decodeURIComponent(params.issue)}, \n Badge ID: ${decodeURIComponent(params.badge)}`,
             url:'https://gorillaworkout.space',
             siteName:'mydigilearn.id',
             images:[{
