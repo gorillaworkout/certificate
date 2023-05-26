@@ -10,16 +10,16 @@ export async function generateMetadata({ params }) {
         twitter:{
             card:'summary_large_image',
             title:decodeURIComponent(params.badge),
-            description:decodeURIComponent(params.description),
-            siteId:'12971917292',
-            creator:'Gorillaworkoutjs',
-            creatorId:'asdasdasdasd',
+            description:decodeURIComponent(params.content),
+            siteId:'02081996',
+            creator:'MyDigilearn',
+            creatorId:'MyDigilearn',
             images:decodeURIComponent(params.img)
           },
           openGraph:{
-            title:decodeURIComponent(params.description),
+            title:decodeURIComponent(params.content),
             url:'https://gorillaworkout.space',
-            siteName:'next.js',
+            siteName:'mydigilearn.id',
             images:[{
               url:decodeURIComponent(params.img),
               width:400,
