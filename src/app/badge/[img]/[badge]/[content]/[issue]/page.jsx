@@ -1,15 +1,10 @@
 
-import Image from 'next/image'
-// import MyPic from '../../../../public/Assets/test.jpg'
-import Head from 'next/head';
-
-
 export async function generateMetadata({ params }) {
     return { 
         title: params.img ,
         twitter:{
             card:'summary_large_image',
-            title:`${decodeURIComponent(params.content)} - \n issue Date: ${decodeURIComponent(params.issue)} - \n Badge Id: ${decodeURIComponent(params.badge)}`,
+            title:`\n ${decodeURIComponent(params.content)} \n issue Date: ${decodeURIComponent(params.issue)} \n Badge Id: ${decodeURIComponent(params.badge)}`,
             description:decodeURIComponent(params.content),
             siteId:'02081996',
             creator:'MyDigilearn',
@@ -17,7 +12,7 @@ export async function generateMetadata({ params }) {
             images:decodeURIComponent(params.img)
           },
           openGraph:{
-            title:`${decodeURIComponent(params.content)} - \n issue Date: ${decodeURIComponent(params.issue)} - \n Badge Id: ${decodeURIComponent(params.badge)}`,
+            title:`\n ${decodeURIComponent(params.content)} \n issue Date: ${decodeURIComponent(params.issue)} \n Badge Id: ${decodeURIComponent(params.badge)}`,
             url:'https://gorillaworkout.space',
             siteName:'mydigilearn.id',
             images:[{
