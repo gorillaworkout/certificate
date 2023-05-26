@@ -58,16 +58,6 @@ export default function Page({params}){
                         </div>
                         <div className="flex flex-col mb-5">
                             <p className="text-[#818181] text-[30px] font-medium leading-10 ">
-                                Description
-                            </p>
-                            {/* <p className="text-[#282828] text-[30px] font-semibold leading-10 ">
-                            {decodeURIComponent(params.description)}
-                            </p> */}
-                            <div className="text-[#282828] text-[30px] font-semibold leading-10 " dangerouslySetInnerHTML={{ __html: decodeURIComponent(params.description )}} />
-
-                        </div>
-                        <div className="flex flex-col mb-5">
-                            <p className="text-[#818181] text-[30px] font-medium leading-10 ">
                                 ISSUE DATE
                             </p>
                             <p className="text-[#282828] text-[30px] font-semibold leading-10 ">
