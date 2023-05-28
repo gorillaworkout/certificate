@@ -8,13 +8,13 @@ export async function generateMetadata({ params }) {
             title:decodeURIComponent(params.badge),
             description:decodeURIComponent(params.badge),
             siteId:'12971917292',
-            creator:'Gorillaworkoutjs',
-            creatorId:'asdasdasdasd',
+            creator:'myDigiLearn',
+            creatorId:'myDigiLearn',
             images:decodeURIComponent(params.img)
           },
           openGraph:{
             title:decodeURIComponent(params.badge),
-            url:'https://gorillaworkout.space',
+            url:'myDigilearn.id',
             siteName:'next.js',
             images:[{
               url:decodeURIComponent(params.img),
