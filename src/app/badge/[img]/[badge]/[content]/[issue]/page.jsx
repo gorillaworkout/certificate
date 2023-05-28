@@ -24,9 +24,6 @@ export async function generateMetadata({ params }) {
     };
   }
 export default function Page({params}){
-
-    let splitParams = params
-    console.log(splitParams,'splitparams')
     return (
         <>
             <div className="grid grid-cols-2 lg:py-28 lg:px-28 md:py-20 md:px-20 sm:px-14 sm:py-14 bg-white w-screen h-screen">
